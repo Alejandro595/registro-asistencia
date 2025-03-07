@@ -9,7 +9,6 @@ body {
     padding: 0;
 }
 
-
 .container {
     margin: 50px auto;
     padding: 20px;
@@ -18,39 +17,6 @@ body {
     max-width: 400px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-    color: #333;
-    font-size: 24px;
-}
-
-p {
-    color: #666;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.video-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-video {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.icon {
-    position: absolute;
-    width: 80px;  /* Aumenta el tamaño del icono */
-    height: 80px;
-    bottom: 50%;  /* Lo sube más arriba */
-    left: 50%;
-    transform: translate(-50%, 50%);  /* Lo centra horizontalmente */
-    opacity: 0.8;
 }
 
 button {
@@ -75,3 +41,21 @@ button:hover {
     font-weight: bold;
     color: #ff0000;
 }
+
+#photo-container img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#camera-icon {
+    width: 50px; /* Tamaño ajustado */
+    height: auto;
+    position: absolute;
+    top: 40%; /* Ajustado para centrar mejor */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+}
+
